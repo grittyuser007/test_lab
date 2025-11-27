@@ -6,6 +6,7 @@ app = Flask(__name__)
 def home():
     name = request.form.get('name')
     email = request.form.get('email')
-    return f"Hello, {name}! Your email is {email}."  
+    age = request.form.get('age')
+    return f"Hello, {name}! Your email is {email} and you are {age} years old."  
 if __name__ == '__main__':
     app.run(debug=True)
