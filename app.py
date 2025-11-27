@@ -7,6 +7,7 @@ def home():
     name = request.form.get('name')
     email = request.form.get('email')
     age = request.form.get('age')
-    return f"Hello, {name}! Your email is {email} and you are {age} years old."  
+    male = request.form.get('male')
+    return f"Hello, {name}! Your email is {email} and you are {age} years old. Male: {male}"  
 if __name__ == '__main__':
     app.run(debug=True)
